@@ -197,4 +197,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intentFrag2 = new Intent(this, Frag2Activity.class);
         startActivity(intentFrag2);
     }
+
+    public void onClickOption(View v) {
+        Intent intentOption = new Intent(this, OptionActivity.class);
+        startActivity(intentOption);
+    }
 }
