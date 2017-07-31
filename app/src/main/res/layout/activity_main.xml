@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch Image"
+            android:onClick="onClickSwitchImage"/>
+
+        <Button
+            android:id="@+id/buttonInflater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inflater"
+            android:onClick="onClickInflater"/>
+
+        <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/buttonIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent"
+            android:onClick="onClickIntent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLinearLayout">
+
+        <Button
+            android:id="@+id/parcelableButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Parcelable"/>
+
+        <Button
+            android:id="@+id/lifecycleButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Lifecycle"
+            android:onClick="onClickLifecycle"/>
+
+        <EditText
+            android:id="@+id/serviceEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello!"/>
+
+        <Button
+            android:id="@+id/serviceButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Service"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondLinearLayout">
+
+        <Button
+            android:id="@+id/touchEventButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Event"
+            android:onClick="onClickEvent"/>
+
+        <Button
+            android:id="@+id/orientationButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Orientation_xml"
+            android:onClick="onClickOrientation"/>
+
+        <Button
+            android:id="@+id/orientationButton2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Orientation_Conf"
+            android:onClick="onClickOrientation2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdLinearLayout">
+
+        <Button
+            android:id="@+id/toastButton"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="Toast"
+            android:onClick="onClickToast"/>
+
+        <Button
+            android:id="@+id/dialogButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Dialog &amp; Snackbar"
+            android:onClick="onClickDialog"/>
+
+        <Button
+            android:id="@+id/progressButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Progress &amp; SeekBar"
+            android:onClick="onClickProgress"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifthLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthLinearLayout">
+
+        <Button
+            android:id="@+id/animationButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Animation"
+            android:onClick="onClickAnimation"/>
+
+        <Button
+            android:id="@+id/slidingButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Sliding"
+            android:onClick="onClickSliding"/>
+
+        <Button
+            android:id="@+id/fragmentButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Fragment"
+            android:onClick="onClickFragment"/>
+
+        <Button
+            android:id="@+id/fragment2Button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Fragment 2"
+            android:onClick="onClickFragment2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifthLinearLayout">
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

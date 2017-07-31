@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jeongbaeoh.constlayout">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Lecture Example"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Lecture Examples">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LayoutInflaterActivity"
+            android:label="Inflater" />
+        <activity
+            android:name=".SwitchImageActivity"
+            android:label="Switch Image" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".ParcelableActivity" />
+        <activity android:name=".LifecycleActivity" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".TouchEventActivity" />
+        <activity android:name=".OrientationActivity" />
+        <activity
+            android:name=".Orientation2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".SlidingActivity" />
+        <activity android:name=".FragActivity" />
+        <activity android:name=".Frag2Activity"></activity>
+    </application>
+
+</manifest>

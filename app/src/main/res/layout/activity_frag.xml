@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/frag0MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Main"/>
+
+    <Button
+        android:id="@+id/frag0MenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/frag0MainButton"
+        android:layout_toEndOf="@+id/frag0MainButton" />
+
+    <FrameLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag0MainButton">
+
+        <!-- Below for adding fragment in xml
+        <fragment
+            android:id="@+id/mainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.jeongbaeoh.constlayout.MainFragment"/>
+        -->
+
+    </FrameLayout>
+
+</RelativeLayout>
