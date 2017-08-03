@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case 101:
-                if(grantResults.length > 0) {
-                    if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                if (grantResults.length > 0) {
+                    if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                         Toast.makeText(this, "SMS receive permission has been granted by user.", Toast.LENGTH_SHORT).show();
-                    } else if(grantResults[0] == PackageManager.PERMISSION_DENIED) {
+                    } else if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
                         Toast.makeText(this, "SMS receive permission has been denied by user.", Toast.LENGTH_SHORT).show();
                     }
                 } else {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button)findViewById(R.id.buttonMenu);
+        Button button = (Button) findViewById(R.id.buttonMenu);
         button.setOnClickListener(new View.OnClickListener() { // 이것이 xml에서 onClick 지정하고 동일한 이름의 method를 만드는 것과 동일
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = (Button)findViewById(R.id.parcelableButton);
+        Button button2 = (Button) findViewById(R.id.parcelableButton);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,20 +86,19 @@ public class MainActivity extends AppCompatActivity {
         //processCommand(passedIntent);
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS);
-        if(permissionCheck == PackageManager.PERMISSION_GRANTED) {
+        if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
             //Toast.makeText(this, "SMS receive permission granted.", Toast.LENGTH_SHORT).show();
         } else {
             //Toast.makeText(this, "SMS receive permission not granted.", Toast.LENGTH_SHORT).show();
 
-            if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.RECEIVE_SMS)) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.RECEIVE_SMS)) {
                 //Toast.makeText(this, "SMS Permission Explain needed.", Toast.LENGTH_SHORT).show();
             } else {
-                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.RECEIVE_SMS}, 101);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECEIVE_SMS}, 101);
             }
         }
 
     }
-
 
 
     // 아래가 응답을 받아주는 메소드임.
@@ -107,9 +106,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == 101) {
+        if (requestCode == 101) {
             String name = data.getStringExtra("name");
-            Toast.makeText(getApplicationContext(), "Response from menu: "+name, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Response from menu: " + name, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -128,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentIntent);
     }
 
-    public void onClickLifecycle (View v) {
+    public void onClickLifecycle(View v) {
         Intent intentLifecycle = new Intent(this, LifecycleActivity.class);
         startActivity(intentLifecycle);
     }
@@ -140,11 +139,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void processCommand(Intent intent) {
-        if(intent != null) {
+        if (intent != null) {
             String command = intent.getStringExtra("command");
             String name = intent.getStringExtra("name");
             //Toast.makeText(this, intent.toString(), Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Received from service: "+command+", "+name, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Received from service: " + command + ", " + name, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -202,4 +201,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intentOption = new Intent(this, OptionActivity.class);
         startActivity(intentOption);
     }
+
+    public void onClickAction(View v) {
+        Intent intentOption = new Intent(this, ActionActivity.class);
+        startActivity(intentOption);
+    }
+
+    public void onClickWebview(View v) {
+        Intent intentOption = new Intent(this, WebviewActivity.class);
+        startActivity(intentOption);
+    }
+
 }

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -63,7 +64,9 @@
         <activity android:name=".SlidingActivity" />
         <activity android:name=".FragActivity" />
         <activity android:name=".Frag2Activity" />
-        <activity android:name=".OptionActivity"></activity>
+        <activity android:name=".OptionActivity" />
+        <activity android:name=".ActionActivity" />
+        <activity android:name=".WebviewActivity"></activity>
     </application>
 
 </manifest>

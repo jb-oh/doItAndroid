@@ -190,8 +190,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Option Menu"
-            android:onClick="onClickOption"
-            />
+            android:onClick="onClickOption" />
+
+        <Button
+            android:id="@+id/actionBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action bar"
+            android:onClick="onClickAction" />
+
+        <Button
+            android:id="@+id/webviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Webview"
+            android:onClick="onClickWebview" />
 
 
     </LinearLayout>
