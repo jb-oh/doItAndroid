@@ -203,13 +203,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickAction(View v) {
-        Intent intentOption = new Intent(this, ActionActivity.class);
-        startActivity(intentOption);
+        Intent intentAction = new Intent(this, ActionActivity.class);
+        startActivity(intentAction);
     }
 
     public void onClickWebview(View v) {
-        Intent intentOption = new Intent(this, WebviewActivity.class);
-        startActivity(intentOption);
+        Intent intentWebview = new Intent(this, WebviewActivity.class);
+        startActivity(intentWebview);
+    }
+
+    public void onClickNinePatch(View v) {
+        Intent intentNine = new Intent(this, NinepatchActivity.class);
+        startActivity(intentNine);
+    }
+
+    public void onClickBitmap(View v) {
+        Intent intentBitmap = new Intent(this, BitmapActivity.class);
+        startActivity(intentBitmap);
     }
 
 }

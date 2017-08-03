@@ -189,14 +189,14 @@
             android:id="@+id/optionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option Menu"
+            android:text="OptionMenu"
             android:onClick="onClickOption" />
 
         <Button
             android:id="@+id/actionBarButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Action bar"
+            android:text="Actionbar"
             android:onClick="onClickAction" />
 
         <Button
@@ -205,6 +205,30 @@
             android:layout_height="wrap_content"
             android:text="Webview"
             android:onClick="onClickWebview" />
+
+        <Button
+            android:id="@+id/NineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ninepatch"
+            android:onClick="onClickNinePatch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seventhLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sixthLinearLayout">
+
+        <Button
+            android:id="@+id/BitmapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitmap Button"
+            android:onClick="onClickBitmap" />
 
 
     </LinearLayout>
