@@ -11,12 +11,6 @@
         android:layout_height="wrap_content"
         android:text="Sample Page" />
 
-    <Button
-        android:id="@+id/webview2StartButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Google" />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
