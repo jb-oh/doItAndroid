@@ -68,7 +68,8 @@
         <activity android:name=".ActionActivity" />
         <activity android:name=".WebviewActivity" />
         <activity android:name=".NinepatchActivity" />
-        <activity android:name=".BitmapActivity"></activity>
+        <activity android:name=".BitmapActivity" />
+        <activity android:name=".ListviewActivity"></activity>
     </application>
 
 </manifest>

@@ -207,7 +207,7 @@
             android:onClick="onClickWebview" />
 
         <Button
-            android:id="@+id/NineButton"
+            android:id="@+id/nineButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ninepatch"
@@ -224,11 +224,18 @@
         app:layout_constraintTop_toBottomOf="@+id/sixthLinearLayout">
 
         <Button
-            android:id="@+id/BitmapButton"
+            android:id="@+id/bitmapButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bitmap Button"
             android:onClick="onClickBitmap" />
+
+        <Button
+            android:id="@+id/listviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listview"
+            android:onClick="onClickListview" />
 
 
     </LinearLayout>

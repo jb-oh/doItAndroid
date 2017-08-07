@@ -222,4 +222,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentBitmap);
     }
 
+    public void onClickListview(View v) {
+        Intent intentList = new Intent(this, ListviewActivity.class);
+        startActivity(intentList);
+    }
+
 }
