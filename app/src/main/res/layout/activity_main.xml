@@ -268,6 +268,13 @@
             android:text="Picker"
             android:onClick="onClickPicker" />
 
+        <Button
+            android:id="@+id/calenderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:onClick="onClickCalendar" />
+
     </LinearLayout>
 
 

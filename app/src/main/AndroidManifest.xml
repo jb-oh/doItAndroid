@@ -72,7 +72,8 @@
         <activity android:name=".ListviewActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".GridviewActivity" />
-        <activity android:name=".PickerActivity"></activity>
+        <activity android:name=".PickerActivity" />
+        <activity android:name=".CalendarActivity" />
     </application>
 
 </manifest>

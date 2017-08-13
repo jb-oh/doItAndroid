@@ -242,4 +242,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentPicker);
     }
 
+    public void onClickCalendar(View v) {
+        Intent intentCalendar = new Intent(this, CalendarActivity.class);
+        startActivity(intentCalendar);
+    }
+
 }
