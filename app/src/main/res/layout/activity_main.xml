@@ -237,7 +237,38 @@
             android:text="Listview"
             android:onClick="onClickListview" />
 
+        <Button
+            android:id="@+id/spinnerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner"
+            android:onClick="onClickSpinner" />
+
+        <Button
+            android:id="@+id/gridviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gridview"
+            android:onClick="onClickGrid" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eighthLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seventhLinearLayout">
+
+        <Button
+            android:id="@+id/pickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picker"
+            android:onClick="onClickPicker" />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -69,7 +69,10 @@
         <activity android:name=".WebviewActivity" />
         <activity android:name=".NinepatchActivity" />
         <activity android:name=".BitmapActivity" />
-        <activity android:name=".ListviewActivity"></activity>
+        <activity android:name=".ListviewActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".GridviewActivity" />
+        <activity android:name=".PickerActivity"></activity>
     </application>
 
 </manifest>

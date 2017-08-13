@@ -227,4 +227,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentList);
     }
 
+    public void onClickSpinner(View v) {
+        Intent intentSpinner = new Intent(this, SpinnerActivity.class);
+        startActivity(intentSpinner);
+    }
+
+    public void onClickGrid(View v) {
+        Intent intentGrid = new Intent(this, GridviewActivity.class);
+        startActivity(intentGrid);
+    }
+
+    public void onClickPicker(View v) {
+        Intent intentPicker = new Intent(this, PickerActivity.class);
+        startActivity(intentPicker);
+    }
+
 }
